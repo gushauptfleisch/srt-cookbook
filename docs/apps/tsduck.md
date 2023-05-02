@@ -37,7 +37,7 @@ git clone https://github.com/tsduck/tsduck.git
 Execute the shell-script:
 
 ```
-build/install-prerequisites.sh
+scripts/install-prerequisites.sh
 ```
 
 It downloads and installs the requested packages which are necessary to build TSDuck. The list of packages and how to install them depend on the operating system distribution and version.
@@ -74,7 +74,7 @@ To run a tool from its build directory, a few environment variables shall be def
 Execute:
 
 ```
-source build/setenv.sh
+source scripts/setenv.sh
 ```
 
 Note the usage of the `source` command to make sure that the environment variables are defined in the current shell.
@@ -82,7 +82,7 @@ Note the usage of the `source` command to make sure that the environment variabl
 Example: 
 
 ```
-$ source build/setenv.sh 
+$ source scripts/setenv.sh 
 $ which tsp
 ~/tsduck/bin/release-x86_64-vmubuntu/tsp
 $ tsp --version
